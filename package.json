@@ -1,0 +1,15 @@
+{
+  "name": "savestream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bulk": "node . bulk",
+    "pack": "pkg index.js --out-path dist --targets node12"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
