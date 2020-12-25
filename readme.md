@@ -2,7 +2,7 @@
 
 ## Install / Build
 
-1. Install (Node.js)[https://nodejs.org/en/]
+1. Install [Node.js](https://nodejs.org/en/)
 In shell / cmd
 2. `npm i -g pkg`
 3. `npm i`
@@ -25,9 +25,9 @@ Sources will be taken from `list.json` file located nearby with executable.
 **list.json** file structure:
 ```json
 [
-	{
-		"src": "https://url.webm",
-		"dst": "file_record.webm"
-	}
+    {
+        "src": "https://url.webm",
+        "dst": "file_record.webm"
+    }
 ]
 ```
