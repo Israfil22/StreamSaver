@@ -27,7 +27,7 @@ const downloadCertain = async (url, path) => {
 
     const res = await downloader.download(url, path)
 
-    console.log(`Successfully downloaded. Total size ${res / SIZE_MB_DIVIDER}mb`)
+    console.log(`Successfully downloaded. Total size ${(res / SIZE_MB_DIVIDER).toFixed(2)}mb`)
 }
 
 const downloadBulk = async (list = [{src: '', dst: ''}]) => {
@@ -100,8 +100,8 @@ const mainThread = async () => {
     else {
         let cliInterface = cli.createInterface()
 
-        const url = await cli.ask(cli.questions.url)
-        const path = await cli.ask(cli.questions.filePath)
+        const url = await cli.ask(cliInterface, cli.questions.url)
+        const path = await cli.ask(cliInterface, cli.questions.filePath)
 
         cliInterface.close()
 
