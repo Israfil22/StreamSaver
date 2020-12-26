@@ -3,7 +3,11 @@
 
 ## As package using
 
-`npm i https://github.com/Israfil22/stream-saver.git`
+`npm i --save https://github.com/Israfil22/stream-save.git`
+
+or 
+
+`npm i --save stream-save`
 
 In code:
 
